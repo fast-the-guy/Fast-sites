@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Website Blocked</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --accent: #2dd4bf;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(800px 400px at 20% 10%, rgba(45,212,191,0.15), transparent),
+        radial-gradient(600px 300px at 80% 90%, rgba(56,189,248,0.12), transparent),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), transparent),
+                  var(--card);
+      border-radius: 18px;
+      padding: 2.5rem 2.75rem;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow:
+        0 20px 40px rgba(0,0,0,0.5),
+        inset 0 0 0 1px rgba(255,255,255,0.06);
+    }
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: rgba(45,212,191,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 2.2rem;
+      box-shadow: inset 0 0 0 2px rgba(45,212,191,0.35);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.75rem;
+    }
+
+    .footer {
+      font-size: 0.75rem;
+      color: rgba(148,163,184,0.7);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">⛔</div>
+    <h1>Website Blocked</h1>
+    <p>
+      Access to this website has been restricted.
+      This page is not available from your current network or device.
+    </p>
+  </div>
+</body>
+</html>
