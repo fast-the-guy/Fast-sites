@@ -364,21 +364,7 @@
             <h3>Systemstatus</h3>
             <div id="systemsList">
                 <div class="system-item">
-                    <div class="system-name">Copyparty File Server</div>
-                    <div class="system-status">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Offline</span>
-                    </div>
-                </div>
-                <div class="system-item">
-                    <div class="system-name">Kasm Workspaces</div>
-                    <div class="system-status">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Offline</span>
-                    </div>
-                </div>
-                <div class="system-item">
-                    <div class="system-name">Minecraft Server</div>
+                    <div class="system-name">Ingenting</div>
                     <div class="system-status">
                         <span class="status-dot"></span>
                         <span class="status-text">Offline</span>
@@ -489,10 +475,18 @@
             const urlParams = new URLSearchParams(window.location.search);
             const systemsList = document.getElementById('systemsList');
             
+            let hasCustomSystems = false;
+            
             // Check for pos1 through pos100
             for (let i = 1; i <= 100; i++) {
                 const systemName = urlParams.get(`pos${i}`);
                 if (systemName) {
+                    // Clear default content on first custom system
+                    if (!hasCustomSystems) {
+                        systemsList.innerHTML = '';
+                        hasCustomSystems = true;
+                    }
+                    
                     const systemItem = document.createElement('div');
                     systemItem.className = 'system-item';
                     systemItem.innerHTML = `
