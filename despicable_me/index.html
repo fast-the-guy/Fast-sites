@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0a0a0f;color:#eee;font-family:'Rajdhani',sans-serif;min-height:100vh}
+  .topbar{background:#111;border-bottom:2px solid #e63c00;padding:8px 24px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#e63c00;letter-spacing:2px}
+  .logo span{color:#fff}
+  .nav{display:flex;gap:20px;font-size:13px;color:#aaa}
+  .nav a{color:#aaa;text-decoration:none;cursor:pointer}
+  .nav a:hover{color:#e63c00}
+  .hero{background:linear-gradient(180deg,#1a0a00 0%,#0a0a0f 100%);padding:20px 24px 12px;border-bottom:1px solid #222}
+  .hero h1{font-family:'Bebas Neue',sans-serif;font-size:38px;color:#fff;letter-spacing:1px}
+  .hero p{font-size:13px;color:#888;margin-top:4px}
+  .badge{display:inline-block;background:#e63c00;color:#fff;font-size:10px;padding:2px 8px;border-radius:3px;margin-left:8px;vertical-align:middle;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px}
+  .card{background:#141414;border:1px solid #222;border-radius:8px;overflow:hidden;cursor:pointer;transition:transform 0.15s,border-color 0.15s}
+  .card:hover{transform:translateY(-3px);border-color:#e63c00}
+  .card-thumb{width:100%;aspect-ratio:16/9;background:#1e1e1e;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .card-thumb img{width:100%;height:100%;object-fit:cover}
+  .play-btn{position:absolute;width:48px;height:48px;background:rgba(230,60,0,0.85);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;opacity:0;transition:opacity 0.2s}
+  .card:hover .play-btn{opacity:1}
+  .card-body{padding:12px}
+  .card-title{font-size:15px;font-weight:600;color:#eee}
+  .card-meta{font-size:12px;color:#666;margin-top:4px;display:flex;gap:10px}
+  .quality{color:#e63c00;font-weight:600}
+  .size{color:#555}
+  .seeds{color:#4caf50;font-size:11px}
+  .leeches{color:#e63c00;font-size:11px}
+  .dl-btn{display:block;width:100%;margin-top:10px;padding:8px;background:#e63c00;color:#fff;border:none;border-radius:5px;font-family:'Rajdhani',sans-serif;font-size:14px;font-weight:600;cursor:pointer;letter-spacing:0.5px}
+  .dl-btn:hover{background:#ff4a0d}
+  .stats-bar{background:#111;border-top:1px solid #1a1a1a;padding:10px 24px;display:flex;gap:30px;font-size:12px;color:#555}
+  .stats-bar span{color:#888}
+  .warning{background:#1a1200;border:1px solid #3a2800;border-radius:6px;padding:10px 14px;margin:0 24px 16px;font-size:12px;color:#887040;display:flex;align-items:center;gap:8px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo">MINION<span>LEAK</span></div>
+  <div class="nav">
+    <a>Home</a><a>Movies</a><a>TV Shows</a><a>Top Torrents</a><a>Request</a>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Despicable Me Collection <span class="badge">COMPLETE</span></h1>
+  <p>Full 1080p BluRay rips — all 3 films + extras. Updated 2024.</p>
+</div>
+
+<div class="warning">
+  ⚠️ &nbsp;Use a VPN before downloading. Your IP address <b style="color:#bb9050">88.x.x.x</b> is visible to trackers.
+</div>
+
+<div class="grid">
+  <div class="card" onclick="gotcha()">
+    <div class="card-thumb">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Despicable_Me%2C_2010_animated_feature_film.jpg" onerror="this.style.display='none'">
+      <div class="play-btn">▶</div>
+    </div>
+    <div class="card-body">
+      <div class="card-title">Despicable Me (2010)</div>
+      <div class="card-meta">
+        <span class="quality">1080p BluRay</span>
+        <span class="size">4.7 GB</span>
+      </div>
+      <div class="card-meta" style="margin-top:4px">
+        <span class="seeds">⬆ 4,821 seeders</span>
+        <span class="leeches">⬇ 312 leechers</span>
+      </div>
+      <button class="dl-btn">⬇ Download Torrent</button>
+    </div>
+  </div>
+
+  <div class="card" onclick="gotcha()">
+    <div class="card-thumb">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Despicable_Me_2.jpg" onerror="this.style.display='none'">
+      <div class="play-btn">▶</div>
+    </div>
+    <div class="card-body">
+      <div class="card-title">Despicable Me 2 (2013)</div>
+      <div class="card-meta">
+        <span class="quality">1080p BluRay</span>
+        <span class="size">5.1 GB</span>
+      </div>
+      <div class="card-meta" style="margin-top:4px">
+        <span class="seeds">⬆ 3,290 seeders</span>
+        <span class="leeches">⬇ 198 leechers</span>
+      </div>
+      <button class="dl-btn">⬇ Download Torrent</button>
+    </div>
+  </div>
+
+  <div class="card" onclick="gotcha()">
+    <div class="card-thumb">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Despicable_Me_3_poster.jpg" onerror="this.style.display='none'">
+      <div class="play-btn">▶</div>
+    </div>
+    <div class="card-body">
+      <div class="card-title">Despicable Me 3 (2017)</div>
+      <div class="card-meta">
+        <span class="quality">1080p BluRay</span>
+        <span class="size">5.4 GB</span>
+      </div>
+      <div class="card-meta" style="margin-top:4px">
+        <span class="seeds">⬆ 2,104 seeders</span>
+        <span class="leeches">⬇ 87 leechers</span>
+      </div>
+      <button class="dl-btn">⬇ Download Torrent</button>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div>Total downloads: <span>1,204,881</span></div>
+  <div>Active users: <span>3,441</span></div>
+  <div>Last updated: <span>Today, 14:32</span></div>
+  <div>Server status: <span style="color:#4caf50">● Online</span></div>
+</div>
+
+<script>
+function gotcha(){
+  window.open('https://www.youtube.com/watch?v=-15VC4Yxzys','_blank');
+}
+</script>
+</body>
+</html>
